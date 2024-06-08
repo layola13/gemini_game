@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骰子游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>骰子游戏</h1>
+        <div class="player-area">
+            <div class="player" id="player1">
+                <h2>玩家 1</h2>
+                <img src="dice1.png" alt="骰子" id="dice1">
+                <p>点数：<span id="score1">0</span></p>
+            </div>
+            <div class="player" id="player2">
+                <h2>玩家 2</h2>
+                <img src="dice1.png" alt="骰子" id="dice2">
+                <p>点数：<span id="score2">0</span></p>
+            </div>
+        </div>
+        <button id="roll-button">掷骰子</button>
+        <p id="winner"></p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

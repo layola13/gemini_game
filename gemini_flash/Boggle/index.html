@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boggle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Boggle</h1>
+        <div class="board"></div>
+        <div class="controls">
+            <button id="start-button">开始游戏</button>
+            <input type="text" id="word-input" placeholder="输入单词">
+            <button id="check-button">检查</button>
+        </div>
+        <div class="score">
+            <p>分数: <span id="score">0</span></p>
+            <p>已找到单词: <span id="found-words"></span></p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

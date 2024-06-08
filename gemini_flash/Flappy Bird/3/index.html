@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flappy Bird</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <canvas id="gameCanvas"></canvas>
+    <div id="startScreen">
+      <h1>Flappy Bird</h1>
+      <p>操作说明：空格键或↑跳跃</p>
+      <button id="startButton">开始游戏</button>
+    </div>
+    <div id="gameOverScreen" style="display: none;">
+      <h2>游戏结束</h2>
+      <p>你的分数: <span id="finalScore"></span></p>
+      <button id="restartButton">重新开始</button>
+    </div>
+    <div id="scoreDisplay" style="position: absolute; top: 20px; left: 20px;">
+      <p>分数：<span id="currentScore">0</span></p>
+    </div>
+  </div>
+  <script src="game.js" type="module"></script>
+</body>
+</html>

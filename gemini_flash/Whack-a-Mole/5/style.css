@@ -1,0 +1,84 @@
+body {
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    overflow: hidden; /* 隐藏滚动条 */
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#score, #timer, #combo-counter {
+    font-size: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    height: 300px;
+    position: relative; /* 为了放置锤子 */
+}
+
+.mole {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    visibility: hidden;
+    cursor: pointer;
+    transition: visibility 0.3s ease; /* 添加过渡效果 */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#game-over, #guide {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 100;
+}
+
+#game-over h2, #guide h2 {
+    margin-bottom: 10px;
+}
+
+#game-over p, #guide p {
+    margin-bottom: 20px;
+}
+
+#final-score {
+    font-weight: bold;
+}
+
+.hammer {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    pointer-events: none; /* 阻止锤子元素自身触发点击事件 */
+}

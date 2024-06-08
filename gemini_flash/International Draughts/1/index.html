@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Draughts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="game-board"></div>
+        <div class="player-info">
+            <div class="player-turn">
+                <p>Player Turn:</p>
+                <span id="current-player"></span>
+            </div>
+            <div class="game-status">
+                <p id="game-message"></p>
+            </div>
+            <button id="start-button">Start Game</button>
+            <button id="restart-button" disabled>Restart Game</button>
+        </div>
+    </div>
+    <script src="game.js" type="module"></script>
+</body>
+</html>

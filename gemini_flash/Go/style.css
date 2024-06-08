@@ -1,0 +1,22 @@
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(19, 30px);
+  grid-template-rows: repeat(19, 30px);
+  border: 2px solid black;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f0d9b5; /* 棋盘背景颜色 */
+  position: relative; /* 用于放置棋子 */
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}

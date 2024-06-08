@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahtzee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Yahtzee</h1>
+        <div class="dice-area">
+            <div class="dice" id="dice1"></div>
+            <div class="dice" id="dice2"></div>
+            <div class="dice" id="dice3"></div>
+            <div class="dice" id="dice4"></div>
+            <div class="dice" id="dice5"></div>
+        </div>
+        <button id="roll-button">Roll Dice</button>
+        <button id="hold-button">Hold Dice</button>
+        <div class="score-area">
+            <h2>Score Card</h2>
+            <div class="score-item">
+                <label for="ones">Ones</label>
+                <input type="text" id="ones" readonly>
+            </div>
+            <div class="score-item">
+                <label for="twos">Twos</label>
+                <input type="text" id="twos" readonly>
+            </div>
+            <div class="score-item">
+                <label for="threes">Threes</label>
+                <input type="text" id="threes" readonly>
+            </div>
+            <div class="score-item">
+                <label for="fours">Fours</label>
+                <input type="text" id="fours" readonly>
+            </div>
+            <div class="score-item">
+                <label for="fives">Fives</label>
+                <input type="text" id="fives" readonly>
+            </div>
+            <div class="score-item">
+                <label for="sixes">Sixes</label>
+                <input type="text" id="sixes" readonly>
+            </div>
+            <div class="score-item">
+                <label for="three-of-a-kind">Three of a Kind</label>
+                <input type="text" id="three-of-a-kind" readonly>
+            </div>
+            <div class="score-item">
+                <label for="four-of-a-kind">Four of a Kind</label>
+                <input type="text" id="four-of-a-kind" readonly>
+            </div>
+            <div class="score-item">
+                <label for="full-house">Full House</label>
+                <input type="text" id="full-house" readonly>
+            </div>
+            <div class="score-item">
+                <label for="small-straight">Small Straight</label>
+                <input type="text" id="small-straight" readonly>
+            </div>
+            <div class="score-item">
+                <label for="large-straight">Large Straight</label>
+                <input type="text" id="large-straight" readonly>
+            </div>
+            <div class="score-item">
+                <label for="yahtzee">Yahtzee</label>
+                <input type="text" id="yahtzee" readonly>
+            </div>
+            <div class="score-item">
+                <label for="chance">Chance</label>
+                <input type="text" id="chance" readonly>
+            </div>
+            <div class="score-item">
+                <label for="total">Total Score</label>
+                <input type="text" id="total" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

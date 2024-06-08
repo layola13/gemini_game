@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #fff;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#note-lane {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background-color: #333;
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+
+.note {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #f00;
+  border-radius: 50%;
+  bottom: -50px;
+}
+
+#key-area {
+  display: flex;
+  margin-top: 20px;
+}
+
+.key {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-color: #555;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}

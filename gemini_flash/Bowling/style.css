@@ -1,0 +1,82 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.bowling-lane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pins {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.pin {
+  width: 20px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 5px;
+  margin: 5px;
+  transition: transform 0.3s ease;
+}
+
+.pin.fallen {
+  transform: rotate(90deg);
+}
+
+.ball {
+  width: 30px;
+  height: 30px;
+  background-color: #f00;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.scoreboard {
+  margin-bottom: 20px;
+}
+
+#scoreTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#scoreTable th, #scoreTable td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+}
+
+#scoreTable th {
+  background-color: #f0f0f0;
+}
+
+#rollButton {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#message {
+  margin-top: 10px;
+}

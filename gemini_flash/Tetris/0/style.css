@@ -1,0 +1,13 @@
+body {
+  background-color: #222;
+  color: #eee;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+canvas {
+  border: 2px solid #eee;
+}

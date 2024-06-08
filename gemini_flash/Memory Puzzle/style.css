@@ -1,0 +1,122 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card.matched {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.2s ease;
+    opacity: 0;
+}
+
+.card.flipped:before {
+    opacity: 1;
+}
+
+.card[data-image="img/card1.png"]:before {
+    background-image: url('img/card1.png');
+}
+
+.card[data-image="img/card2.png"]:before {
+    background-image: url('img/card2.png');
+}
+
+.card[data-image="img/card3.png"]:before {
+    background-image: url('img/card3.png');
+}
+
+.card[data-image="img/card4.png"]:before {
+    background-image: url('img/card4.png');
+}
+
+.card[data-image="img/card5.png"]:before {
+    background-image: url('img/card5.png');
+}
+
+.card[data-image="img/card6.png"]:before {
+    background-image: url('img/card6.png');
+}
+
+.card[data-image="img/card7.png"]:before {
+    background-image: url('img/card7.png');
+}
+
+.card[data-image="img/card8.png"]:before {
+    background-image: url('img/card8.png');
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.timer, .moves {
+    margin-top: 10px;
+    font-size: 16px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>挖矿游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-area">
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+        </div>
+        <div class="info-area">
+            <h2>矿石</h2>
+            <p>数量: <span id="oreCount">0</span></p>
+            <h2>工具</h2>
+            <p>镐: <span id="pickaxeLevel">1</span></p>
+            <button id="upgradePickaxe">升级镐</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

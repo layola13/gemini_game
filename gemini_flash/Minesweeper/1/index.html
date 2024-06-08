@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扫雷</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>扫雷</h1>
+        <div class="game-info">
+            <span>时间:</span> <span id="timer">0</span>
+            <span>炸弹:</span> <span id="mines">0</span>
+        </div>
+        <div class="game-board" id="gameBoard"></div>
+        <div class="controls">
+            <button id="resetButton">重新开始</button>
+            <button id="pauseButton">暂停</button>
+            <label for="difficulty">难度:</label>
+            <select id="difficulty">
+                <option value="easy">初级</option>
+                <option value="medium">中级</option>
+                <option value="hard">高级</option>
+            </select>
+        </div>
+    </div>
+    <script src="game.js" type="module"></script>
+</body>
+</html>

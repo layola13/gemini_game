@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳棋</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>跳棋</h1>
+        <div id="game-info">
+            <p>当前玩家: <span id="current-player">黑棋</span></p>
+            <p>游戏状态: <span id="game-status">暂停</span></p>
+            <p>黑棋剩余: <span id="black-pieces">12</span></p>
+            <p>红棋剩余: <span id="red-pieces">12</span></p>
+            <button id="start-game">开始游戏</button>
+            <button id="restart-game">重新开始</button>
+            <button id="pause-game">暂停游戏</button>
+            <button id="undo-move">悔棋</button>
+            <select id="difficulty">
+                <option value="easy">简单</option>
+                <option value="medium">中等</option>
+                <option value="hard">困难</option>
+            </select>
+        </div>
+        <div id="game-board"></div>
+    </div>
+    <script src="game.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* 游戏棋盘样式 */
+#game-board {
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(10, 60px);
+    grid-template-rows: repeat(10, 60px);
+}
+
+/* 格子样式 */
+.cell {
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 玩家样式 */
+.player {
+    /* 玩家颜色、形状等 */
+}
+
+/* 其他样式 */
+/* ... */

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扫雷</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>扫雷</h1>
+        <div class="game-info">
+            <span>时间:</span> <span id="timer">0</span>
+            <span>炸弹:</span> <span id="mines">0</span>
+        </div>
+        <div class="game-board" id="gameBoard"></div>
+        <div class="controls">
+            <button id="resetButton">重新开始</button>
+            <button id="pauseButton">暂停</button>
+            <label for="difficulty">难度:</label>
+            <select id="difficulty">
+                <option value="easy">初级 (8x8, 10雷)</option>
+                <option value="medium">中级 (16x16, 40雷)</option>
+                <option value="hard">高级 (16x30, 99雷)</option>
+            </select>
+        </div>
+        <div id="game-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>扫雷游戏规则</h2>
+                <p>目标：点击所有非雷区单元格，并标记所有雷区单元格。</p>
+                <p>操作：
+                    <ul>
+                        <li>左键点击：揭开单元格。如果点击到雷，游戏结束。</li>
+                        <li>右键点击：标记/取消标记一个单元格为雷。</li>
+                    </ul>
+                </p>
+                <p>提示：
+                    <ul>
+                        <li>每个单元格周围数字显示其周围的雷数。</li>
+                        <li>右键标记的雷数等于当前难度下的雷数，则游戏胜利。</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="game.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冰球推推乐</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        <div id="gameInfo">
+            <p>游戏说明：用鼠标点击冰球，发射冰球击中目标区域得分。得分达到10分即可获胜！</p>
+            <button id="startButton">开始游戏</button>
+            <button id="restartButton" disabled>重玩游戏</button>
+            <button id="pauseButton" disabled>暂停游戏</button>
+            <p id="scoreDisplay">得分：0</p>
+        </div>
+    </div>
+    <script src="game.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(9, 30px);
+    grid-template-rows: repeat(9, 30px);
+    gap: 2px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.2s ease; /* 添加过渡效果 */
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+.revealed {
+    background-color: #fff;
+}
+
+.mine {
+    background-color: #337ab7; /* 使用深蓝色作为雷的颜色 */
+    color: #fff;
+}
+
+.number {
+    color: #007bff; /* 蓝色数字 */
+}
+
+.number[data-value="2"] {
+    color: #28a745; /* 绿色数字 */
+}
+
+.number[data-value="3"] {
+    color: #dc3545; /* 红色数字 */
+}
+
+.flag {
+    background-color: #00f;
+    color: #fff;
+}
+
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#reset-button, #pause-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#difficulty-select {
+    margin-left: 10px;
+}

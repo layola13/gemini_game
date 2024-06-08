@@ -1,0 +1,15 @@
+body {
+  background-color: #222;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+canvas {
+  background-color: #000;
+  border: 2px solid white;
+}

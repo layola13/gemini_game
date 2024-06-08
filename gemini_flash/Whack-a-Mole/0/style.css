@@ -1,0 +1,40 @@
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.mole {
+    width: 50px;
+    height: 50px;
+    background-image: url('mole.png');
+    background-size: cover;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#score {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#start-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

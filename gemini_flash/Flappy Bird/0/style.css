@@ -1,0 +1,14 @@
+/* style.css */
+body {
+  background-color: #70c5ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+canvas {
+  background-color: #e0ffff;
+  border: 2px solid #000;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保龄球游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>保龄球</h1>
+        <div class="scoreboard">
+            <h2>分数</h2>
+            <table id="scoreTable"></table>
+        </div>
+        <div class="bowling-lane">
+            <div class="pins">
+                <div class="pin" id="pin1"></div>
+                <div class="pin" id="pin2"></div>
+                <div class="pin" id="pin3"></div>
+                <div class="pin" id="pin4"></div>
+                <div class="pin" id="pin5"></div>
+                <div class="pin" id="pin6"></div>
+                <div class="pin" id="pin7"></div>
+                <div class="pin" id="pin8"></div>
+                <div class="pin" id="pin9"></div>
+                <div class="pin" id="pin10"></div>
+            </div>
+            <div class="ball"></div>
+        </div>
+        <button id="rollButton">投球</button>
+        <p id="message"></p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

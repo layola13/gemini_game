@@ -1,0 +1,55 @@
+/* style.css */
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.light {
+  background-color: #f0f0f0;
+}
+
+.dark {
+  background-color: #808080;
+}
+
+.piece {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.black {
+  background-color: black;
+}
+
+.red {
+  background-color: red;
+}
+
+.king {
+  border: 3px solid gold;
+}
+
+.selected {
+  background-color: #eee;
+}
+
+.valid-move {
+  background-color: #d0f0d0;
+}

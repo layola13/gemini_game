@@ -1,0 +1,70 @@
+/* style.css */
+body {
+  background-color: #70c5ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#gameContainer {
+  text-align: center;
+  position: relative; /* 为分数显示设置相对定位 */
+}
+
+canvas {
+  background-color: #e0ffff;
+  border: 2px solid #000;
+}
+
+#startScreen, #gameOverScreen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#startScreen h1, #gameOverScreen h2 {
+  margin-top: 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#scoreDisplay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#difficultySelection {
+  margin-top: 10px;
+}
+
+#difficultySelection label {
+  display: inline-block;
+  width: 100px;
+}
+
+#tutorial {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#tutorial img {
+  width: 50px;
+}

@@ -1,0 +1,60 @@
+/* style.css */
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  background-color: #eee; /* 设置画布背景颜色 */
+  border: 2px solid #333; /* 设置画布边框 */
+  border-radius: 5px; /* 设置画布圆角 */
+}
+
+#game-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+
+/* 添加游戏结束画面样式 */
+.game-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0.8); /* 修改游戏结束画面背景颜色 */
+  color: white;
+  font-size: 24px;
+}
+
+.game-over button {
+  margin-top: 20px;
+}

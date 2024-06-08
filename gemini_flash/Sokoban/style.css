@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    gap: 20px;
+    margin: 20px auto;
+    width: 500px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+.wall {
+    background-color: gray;
+}
+
+.box {
+    background-color: brown;
+}
+
+.target {
+    background-color: green;
+}
+
+.player {
+    background-color: blue;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

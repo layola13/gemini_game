@@ -1,0 +1,33 @@
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+  border: 1px solid black;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light {
+  background-color: #f0f0f0;
+}
+
+.dark {
+  background-color: #000000;
+}
+
+.player-info {
+  margin-left: 20px;
+}
